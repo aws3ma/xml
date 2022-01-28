@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
-<?xml-model href="ex.dtd"?>
+<?xml-model href="cv.dtd"?>
 <cv>
     <!-- information personnel -->
     <infos>
