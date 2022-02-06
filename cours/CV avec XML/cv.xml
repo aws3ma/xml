@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 
+
 <?xml-model href="cv.dtd"?>
 <cv>
     <!-- information personnel -->
@@ -11,87 +12,83 @@
     </infos>
     <!-- cursus universitaire-->
     <cursus-univ>
-        <iset>
+        <universite nom="ISET Sfax">
             <premier> 1er année Technologie de l'Informatique tronc commun</premier>
             <deuxieme>2eme année Developpement des Systemes d'Informations</deuxieme>
             <troisieme>3eme année Developpement des Systemes d'Informations</troisieme>
-        </iset>
-        <enetcom>
+        </universite>
+        <universite nom="ENET'COM">
             <premier>1er année Ingénierie des Données et Systèmes Décisionnels</premier>
-        </enetcom>
+        </universite>
     </cursus-univ>
     <!-- Stages-->
     <stages>
-        <iset>
-            <inititation>
+        <universite nom="ISET Sfax">
+            <stage>
                 <titre>Stage d'initiation</titre>
                 <societe>CliniSys</societe>
                 <duree>4 semaines</duree>
                 <desc> Maintenance des appareil informatiques</desc> 
-            </inititation>
-            <perfectionnment>
+            </stage>
+            <stage>
                 <titre>Stage de perfectionnement</titre>
                 <societe>CliniSys</societe>
                 <duree>4 semaines</duree>
                 <desc>Devoloppement d'une application de service aprés vente. </desc>
                 <techs>PHP,MySql,HTML,CSS,JavaScript,jQuery,BootStrap,DataTAble</techs>
-            </perfectionnment>
-            <PFE>
-                <titre>Stage PFE</titre>
+            </stage>
+            <stage>
+                <titre>Stage fin d'étude</titre>
                 <societe>2H Design</societe>
                 <duree>4 mois</duree>
                 <desc> integration Odoo ERP dans l'entreprise 2H Design.</desc>
                 <techs>Odoo ERP, PostgreSQL, Docker, Ubuntu, Python, XML, Javascript, HTML, CSS, BootStrap, GitLab</techs>
-            </PFE>
-        </iset>
-        <enetcom></enetcom>
+            </stage>
+        </universite>
+        <universite nom="ENET'COM"></universite>
     </stages>
     <!-- Projets realisés-->
     <projets>
-        <projet1> site web ecommerce avec php native, html5, css3, javascript, jquery et mysql</projet1>
-        <projet2> application angular pour affichée les données covid19 en utilise api covid19</projet2>
-        <projet3> application django pour affichée les données covid19 de a tunisie</projet3>
-        <projet4> application web jee pour organiser un tournoi football. j'utilise intellij ultimare IDE, maven, SOAP, XML, apache, html, bootstrap et mysql</projet4>
-        <projet5> application mobile ionic(angular). platforme de maintenance. ionic(angular), firebase, json</projet5>
-        <projet6> application mobile ionic(angular) pour gerer les contacts, afficher le meteo, rechercher des images, ouvrir map. j'utilise google maps</projet6>
-        <projet7> application mobile ionic(angular) pour rechercher les agences d'une societe avec l'affichage de localisation dans une map puis reserver une ticket. j'utilise mapbox pour afficher le map.</projet7>
-        <projet8> developpement d'une jeu mobile avec unity</projet8>
+        <projet> site web ecommerce avec php native, html5, css3, javascript, jquery et mysql</projet>
+        <projet> application angular pour affichée les données covid19 en utilise api covid19</projet>
+        <projet> application django pour affichée les données covid19 de a tunisie</projet>
+        <projet> application web jee pour organiser un tournoi football. j'utilise intellij ultimare IDE, maven, SOAP, XML, apache, html, bootstrap et mysql</projet>
+        <projet> application mobile ionic(angular). platforme de maintenance. ionic(angular), firebase, json</projet>
+        <projet> application mobile ionic(angular) pour gerer les contacts, afficher le meteo, rechercher des images, ouvrir map. j'utilise google maps</projet>
+        <projet> application mobile ionic(angular) pour rechercher les agences d'une societe avec l'affichage de localisation dans une map puis reserver une ticket. j'utilise mapbox pour afficher le map.</projet>
+        <projet> developpement d'une jeu mobile avec unity</projet>
     </projets>
     <!-- certifications-->
     <certifs>
-        <udemy>
-            <angular> certification angular</angular>
-            <photoshop> Certification photoshop</photoshop>
-        </udemy>
-        
+        <certif>
+            <titre>certification angular</titre>
+            <duree>11H</duree>
+            <centre>Udemy</centre>
+        </certif>
+        <certif>
+            <titre>Certification photoshop</titre>
+            <duree>13.5H</duree>
+            <centre>Udemy</centre>
+        </certif>
     </certifs>
     <!-- competances-->
     <competances>
-        <softskills>
-            <sk1> Ponctuel</sk1>
-            <sk2> Travail en équipe</sk2>
-            <sk3> Fast learner</sk3>
-            <sk4> A jour des nouvelles technologies</sk4>
-        </softskills>
+        <softskills> Ponctuel, Fast learner,A jour des nouvelles technologies </softskills>
         <hardskills>
-            <prog-lang>
+            <hs titre="programming languages">
                 Java, Python, JavaScrip, C, C#, PHP
-            </prog-lang>
-            <frameworks>
+            </hs>
+            <hs titre="frameworks">
                 Angular, Django, Ionic, NodeJS, ASP.NET
-            </frameworks>
-            <DB>
+            </hs>
+            <hs titre="Data Base">
                 MySql, MongoDB, Oracle DB, PostgreSQL, SQL server, Firebase, PL/SQL, SQL
-            </DB>
-            <Techs>
+            </hs>
+            <hs titre="Technologies">
                 Restful, Soap, XML, Json
-            </Techs>
+            </hs>
         </hardskills>
     </competances>
     <!-- langues-->
-    <langue>
-        <Anglais></Anglais>
-        <Arabe></Arabe>
-        <Francais></Francais>
-    </langue>
+    <langue> Anglais, Arabe, Français </langue>
 </cv>
