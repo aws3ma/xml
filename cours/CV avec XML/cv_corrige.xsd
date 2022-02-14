@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cv">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="infoPersonelle">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="nom" type="xs:string" />
+                            <xs:element name="prenom" type="xs:string" />
+                            <xs:element name="age" type="xs:positiveInteger" />
+                            <xs:element name="adresse" type="xs:string" />
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="curseur_universitaire">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="formation" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="niveau_etude" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:attribute name="ecole" use="required" />
+                                                <xs:attribute name="annee" type="xs:integer" use="required" />
+                                                <xs:attribute name="val_NE" use="required" />
+                                                <xs:attribute name="mention" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="cycle" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="competance">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="comp" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="type" use="required" />
+                                    <xs:attribute name="titre" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="projet_realiser">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="projet" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:attribute name="matiere" use="required" />
+                                    <xs:attribute name="titre" use="required" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

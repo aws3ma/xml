@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<?xml-model href="cv_corrige.xsd"?>
+<cv>
+    <infoPersonelle>
+        <nom> ___</nom>
+        <prenom> _____ </prenom>
+        <age>21</age>
+        <adresse>  sfax  </adresse>
+    </infoPersonelle>
+    <curseur_universitaire>
+
+        <formation cycle="préparatoire">
+            <niveau_etude ecole="ipeis" annee="2020" val_NE="1ere" mention="AB"/>
+            <niveau_etude    ecole="ipeis" annee="2021" val_NE="2eme" mention="AB" />
+        </formation>
+        <formation cycle="ingénieur" >
+           <niveau_etude ecole="enetcom" annee="2020" val_NE="1ere" mention="bien"/>
+        </formation>
+    </curseur_universitaire>
+    <competance> 
+        <comp type= "soft_skills" titre="travail en equipe" />
+        <comp type="soft_skills" titre="fast learner" />
+        <comp type="hard_skills" titre="python" />
+        <comp type="hard_skills" titre="machine learning" />
+    </competance>
+    <projet_realiser>
+        <projet matiere="statistique" titre="distribution des données"/>
+        <projet matiere="fluter" titre="mobile"/> 
+        
+        
+        
+    </projet_realiser>
+
+
+</cv>
