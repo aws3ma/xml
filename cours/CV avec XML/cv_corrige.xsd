@@ -6,10 +6,42 @@
                 <xs:element name="infoPersonelle">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="nom" type="xs:string" />
-                            <xs:element name="prenom" type="xs:string" />
-                            <xs:element name="age" type="xs:positiveInteger" />
-                            <xs:element name="adresse" type="xs:string" />
+                            <xs:element name="nom">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="titr" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="prenom">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="titr" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="age">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="titr" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
+                            <xs:element name="adresse">
+                                <xs:complexType>
+                                    <xs:simpleContent>
+                                        <xs:extension base="xs:string">
+                                            <xs:attribute name="titr" use="required" />
+                                        </xs:extension>
+                                    </xs:simpleContent>
+                                </xs:complexType>
+                            </xs:element>
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>
@@ -32,15 +64,59 @@
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
+                        <xs:attribute name="class" use="required" />
                     </xs:complexType>
                 </xs:element>
-                <xs:element name="competance">
+                <xs:element name="certifs">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="comp" maxOccurs="unbounded">
+                            <xs:element name="certif" maxOccurs="unbounded">
                                 <xs:complexType>
-                                    <xs:attribute name="type" use="required" />
-                                    <xs:attribute name="titre" use="required" />
+                                    <xs:sequence>
+                                        <xs:element name="titre" type="xs:string" />
+                                        <xs:element name="duree" type="xs:string" />
+                                        <xs:element name="centre" type="xs:string" />
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="langue" type="xs:string" />
+                <xs:element name="competances">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="softskills" type="xs:string" />
+                            <xs:element name="hardskills">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="hs" maxOccurs="unbounded">
+                                            <xs:complexType>
+                                                <xs:simpleContent>
+                                                    <xs:extension base="xs:string">
+                                                        <xs:attribute name="titre" use="required" />
+                                                    </xs:extension>
+                                                </xs:simpleContent>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                    </xs:complexType>
+                </xs:element>
+                <xs:element name="stages">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="stage" maxOccurs="unbounded">
+                                <xs:complexType>
+                                    <xs:sequence>
+                                        <xs:element name="titre" type="xs:string" />
+                                        <xs:element name="societe" type="xs:string" />
+                                        <xs:element name="duree" type="xs:string" />
+                                        <xs:element name="desc" type="xs:string" />
+                                        <xs:element name="techs" minOccurs="0" type="xs:string" />
+                                    </xs:sequence>
                                 </xs:complexType>
                             </xs:element>
                         </xs:sequence>
@@ -49,12 +125,7 @@
                 <xs:element name="projet_realiser">
                     <xs:complexType>
                         <xs:sequence>
-                            <xs:element name="projet" maxOccurs="unbounded">
-                                <xs:complexType>
-                                    <xs:attribute name="matiere" use="required" />
-                                    <xs:attribute name="titre" use="required" />
-                                </xs:complexType>
-                            </xs:element>
+                            <xs:element name="projet" maxOccurs="unbounded" type="xs:string" />
                         </xs:sequence>
                     </xs:complexType>
                 </xs:element>

@@ -1,0 +1,91 @@
+cv{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 73px;
+    margin-right: 73px;
+    margin-top: 8px;
+    padding: 10 20 20 10;
+    background-color: whitesmoke;
+    justify-content: center;
+    text-transform: capitalize;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+infoPersonelle,certifs,competances,langue{
+    flex-basis: 25%;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    
+    display: block;
+}
+*{
+    display: block;
+}
+certifs{
+    flex-basis: 17%;
+}
+langue{
+    flex-basis: 0%;
+}
+
+infoPersonelle{
+    
+    justify-content: center;
+    text-align: center;
+    border-radius: 0px 0px 10px 10px;
+  background: #212fad8e;
+  padding: 20px;
+  width: 30px;
+  height: 80px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0px 0px 5px 1px rgba(0, 0, 0, 0.19);
+}
+stages{
+    flex-basis: 67% !important;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+curseur_universitaire{
+    flex-basis: 40%;
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    margin-left: 3px;
+    line-break: strict;
+    display: block;
+}
+projet_realiser{
+    border-top: 2px dotted rgb(99, 99, 99);
+    flex-basis: 67%;
+    padding-left: 3px;
+    padding-right: 4px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: block;
+}
+[type]::before{
+    content: attr(type);
+    display: block;
+}
+[titre]::before{
+    content: attr(titre);
+    display: block;
+}
+[titr]::before{
+    content: attr(titr);
+}
+
+[cycle]::before{
+    content: attr(cycle);
+    display: block;
+}
+
+[val_NE]::before{
+    content: attr(val_NE);
+    display: block;
+}
+

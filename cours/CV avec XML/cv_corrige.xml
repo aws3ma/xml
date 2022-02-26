@@ -1,36 +1,94 @@
 <?xml version="1.0" encoding="utf-8"?>
 
+
+<?xml-stylesheet href="style.css" type="text/css"?>
+<!-- <?xml-model href="cv_corrige.xsd"?> -->
 <?xml-model href="cv_corrige.xsd"?>
 <cv>
-    <infoPersonelle>
-        <nom> ___</nom>
-        <prenom> _____ </prenom>
-        <age>21</age>
-        <adresse>  sfax  </adresse>
-    </infoPersonelle>
-    <curseur_universitaire>
+    <infoPersonelle >
+            <nom titr="Nom"> Trabelsi</nom>
+            <prenom titr="Prenom"> Oussema</prenom>
+            <age titr="Age"> 22</age>
+            <adresse titr="Adresse">  Route saltania km 4  </adresse>
 
-        <formation cycle="préparatoire">
-            <niveau_etude ecole="ipeis" annee="2020" val_NE="1ere" mention="AB"/>
-            <niveau_etude    ecole="ipeis" annee="2021" val_NE="2eme" mention="AB" />
+    </infoPersonelle>
+    <curseur_universitaire class="column">
+
+        <formation cycle="License">
+            <niveau_etude ecole="ISET Sfax" annee="2019" val_NE="1er année Technologie de l'Informatique tronc commun" mention="AB" />
+            <niveau_etude ecole="ISET Sfax" annee="2020" val_NE="2eme année Developpement des Systemes d'Informations" mention="TB" />
+            <niveau_etude ecole="ISET Sfax" annee="2021" val_NE="3eme année Developpement des Systemes d'Informations" mention="B" />
         </formation>
-        <formation cycle="ingénieur" >
-           <niveau_etude ecole="enetcom" annee="2020" val_NE="1ere" mention="bien"/>
+        <formation cycle="Ingénieur">
+            <niveau_etude ecole="enetcom" annee="2020" val_NE="1ere" mention="-" />
         </formation>
     </curseur_universitaire>
-    <competance> 
-        <comp type= "soft_skills" titre="travail en equipe" />
-        <comp type="soft_skills" titre="fast learner" />
-        <comp type="hard_skills" titre="python" />
-        <comp type="hard_skills" titre="machine learning" />
-    </competance>
+    <certifs>
+        <certif>
+            <titre>certification angular</titre>
+            <duree>11H</duree>
+            <centre>Udemy</centre>
+        </certif>
+        <certif>
+            <titre>Certification photoshop</titre>
+            <duree>13.5H</duree>
+            <centre>Udemy</centre>
+        </certif>
+    </certifs>
+    <langue> Anglais, Arabe, Français </langue>
+    
+    
+    <competances>
+        <softskills> Ponctuel, Fast learner,A jour des nouvelles technologies </softskills>
+        <hardskills>
+            <hs titre="programming languages">
+                Java, Python, JavaScrip, C, C#, PHP
+            </hs>
+            <hs titre="frameworks">
+                Angular, Django, Ionic, NodeJS, ASP.NET
+            </hs>
+            <hs titre="Data Base">
+                MySql, MongoDB, Oracle DB, PostgreSQL, SQL server, Firebase, PL/SQL, SQL
+            </hs>
+            <hs titre="Technologies">
+                Restful, Soap, XML, Json
+            </hs>
+        </hardskills>
+    </competances>
+    
+    <stages>
+        <stage>
+            <titre>Stage d'initiation</titre>
+            <societe>CliniSys</societe>
+            <duree>4 semaines</duree>
+            <desc> Maintenance des appareil informatiques</desc>
+        </stage>
+        <stage>
+            <titre>Stage de perfectionnement</titre>
+            <societe>CliniSys</societe>
+            <duree>4 semaines</duree>
+            <desc>Devoloppement d'une application de service aprés vente. </desc>
+            <techs>PHP,MySql,HTML,CSS,JavaScript,jQuery,BootStrap,DataTAble</techs>
+        </stage>
+        <stage>
+            <titre>Stage fin d'étude</titre>
+            <societe>2H Design</societe>
+            <duree>4 mois</duree>
+            <desc> integration Odoo ERP dans l'entreprise 2H Design.</desc>
+            <techs>Odoo ERP, PostgreSQL, Docker, Ubuntu, Python, XML, Javascript, HTML, CSS, BootStrap, GitLab</techs>
+        </stage>
+    </stages>
     <projet_realiser>
-        <projet matiere="statistique" titre="distribution des données"/>
-        <projet matiere="fluter" titre="mobile"/> 
-        
-        
-        
+        <projet> site web ecommerce avec php native, html5, css3, javascript, jquery et mysql</projet>
+        <projet> application angular pour affichée les données covid19 en utilise api covid19</projet>
+        <projet> application django pour affichée les données covid19 de a tunisie</projet>
+        <projet> application web jee pour organiser un tournoi football. j'utilise intellij ultimare IDE, maven, SOAP, XML, apache, html, bootstrap et mysql</projet>
+        <projet> application mobile ionic(angular). platforme de maintenance. ionic(angular), firebase, json</projet>
+        <projet> application mobile ionic(angular) pour gerer les contacts, afficher le meteo, rechercher des images, ouvrir map. j'utilise google maps</projet>
+        <projet> application mobile ionic(angular) pour rechercher les agences d'une societe avec l'affichage de localisation dans une map puis reserver une ticket. j'utilise mapbox pour afficher le map.</projet>
+        <projet> developpement d'une jeu mobile avec unity</projet>
     </projet_realiser>
-
+    
+    
 
 </cv>
