@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE stock SYSTEM "Ex11.dtd">
+<stock>
+    <bouteille>
+        <marque>Cristaline</marque>
+        <composition>
+            <ion type="positif">calcium 71mg/l</ion>
+            <ion type="positif">magnésium 5,5mg/l</ion>
+            <ion tpye="negatif">chlorure 20mg/l</ion>
+            <ion type="negatif">nitrate 1mg/l</ion>
+            <autre type="metal">fer</autre>
+        </composition>
+        <source>
+            <ville>St-Cyr la Source</ville>
+            <departement>Loiret</departement>
+        </source>
+        <code_barre>3274080005003</code_barre>
+        <contenance unit="cl">150</contenance>
+        <ph>7,45</ph>
+    </bouteille>
+    <bouteille>
+        <marque>Cristaline</marque>
+        <composition>
+            <ion type="positif">calcium 98mg/l</ion>
+            <ion type="positif">magnésium 4mg/l</ion>
+            <ion type="negatif">chlorure 3,6mg/l</ion>
+            <ion type="negatif">nitrate 2mg/l</ion>
+        </composition>
+        <source>
+            <ville>Aurèle</ville>
+            <departement>Alpes Maritimes</departement>
+        </source>
+        <code_barre>3268840001008</code_barre>
+        <contenance unit="cl">50</contenance>
+        <ph>7,4</ph>
+    </bouteille>
+    <bouteille>
+        <marque>Volvic</marque>
+        <composition>
+            <ion type="positif">calcium 11,5mg/l</ion>
+            <ion type="positif">magnésium 8mg/l</ion>
+            <ion type="negatif">chlorure 13,5mg/l</ion>
+            <ion type="negatif">nitrate 6,3mg/l</ion>
+        </composition>
+        <source>
+            <ville>Volvic</ville>
+            <departement>Puy-de-Dôme</departement>
+        </source>
+        <code_barre>3057640117008</code_barre>
+        <contenance unit="cl">50</contenance>
+        <ph>7</ph>
+    </bouteille>
+</stock>

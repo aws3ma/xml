@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE stock SYSTEM "Ex11.dtd">
+<stock>
+    <bouteille pH="7.45" code="6274080005003">
+        <marque>Fourat</marque>
+        <source region="Ksar Lemsa" ville=" Kairouan " />
+        <volume unite="cl">15O</volume>
+        <composition>
+            <ion type="positif" unite="mg/l">Calcium:71,Magnesium:5,5</ion>
+            <ion type="negatif" unite="mg/l">Chlorure: 20.nitrates:1</ion>
+            <autre> Fer</autre>
+        </composition>
+    </bouteille>
+    <bouteille pH="7" code="6266845671118">
+        <marque>Sabrine</marque>
+        <source region="Mizeb" ville="Gasrine" />
+        <volume unite="cl">50</volume>
+        <composition>
+            <ion type="positif" unite="mg/l">Calcium:98. Magnesium:44</ion>
+            <ion type="negatif" unite="mg/l">Chlorure: 3,6,nitrates/2</ion>
+        </composition>
+    </bouteille>
+    <bouteille pH="7" code="6058632517118">
+        <marque> Maxwa </marque>
+        <source region="Kef Ghrab" ville="Bizertz" />
+        <volume unite="cl">50</volume>
+        <composition>
+            <ion type="positif" unite="mg/l">Calcium: 11,5 ,Magnesium:8</ion>
+            <ion type="negatif" unite="mg/l">Chlorure: 13,5 ,nitrates/6,3</ion>
+            <autre> Silice</autre>
+        </composition>
+    </bouteille>
+</stock>

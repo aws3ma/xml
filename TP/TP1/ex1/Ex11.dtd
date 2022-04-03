@@ -1,0 +1,23 @@
+<!ELEMENT stock (bouteille+)>
+<!ELEMENT bouteille ((marque,composition,source,code_barre,contenance,ph) | (marque,source,volume,composition))>
+<!ATTLIST bouteille pH NMTOKEN #IMPLIED>
+<!ATTLIST bouteille code NMTOKEN #IMPLIED>
+<!ELEMENT volume (#PCDATA)>
+<!ATTLIST volume unite NMTOKEN #IMPLIED>
+<!ELEMENT marque (#PCDATA)>
+<!ELEMENT composition (ion+,autre?)>
+<!ELEMENT ion (#PCDATA)>
+<!ATTLIST ion type (negatif|positif) #IMPLIED>
+<!ATTLIST ion tpye NMTOKEN #IMPLIED>
+<!ATTLIST ion unite CDATA #FIXED "mg/l">
+<!ELEMENT autre (#PCDATA)>
+<!ATTLIST autre type NMTOKEN #IMPLIED>
+<!ELEMENT source (ville?,departement?)>
+<!ATTLIST source region CDATA #IMPLIED>
+<!ATTLIST source ville CDATA #IMPLIED>
+<!ELEMENT ville (#PCDATA)>
+<!ELEMENT departement (#PCDATA)>
+<!ELEMENT code_barre (#PCDATA)>
+<!ELEMENT contenance (#PCDATA)>
+<!ATTLIST contenance unit NMTOKEN #REQUIRED>
+<!ELEMENT ph (#PCDATA)>

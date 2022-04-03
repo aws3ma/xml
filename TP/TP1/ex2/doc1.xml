@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ex2.dtd" type="application/xml-dtd"?>
+<films>
+    <acteur id="ID1"></acteur>
+    <film lang="fr">
+        <photo href="" />
+        <titre></titre>
+        <annee></annee>
+        <realisateur></realisateur>
+        <casting></casting>
+    </film>
+</films>

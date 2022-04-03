@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="ex2.dtd" type="application/xml-dtd"?>
+<films>
+    <acteur id="IDREF"></acteur>
+    <film lang="fr">
+        <titre></titre>
+        <annee></annee>
+        <realisateur></realisateur>
+        <casting>
+            <personnage acteur="IDREF"></personnage>
+            <personnage></personnage>
+        </casting>
+    </film>
+</films>

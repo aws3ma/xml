@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <?xml-model href="ex3.dtd" type="application/xml-dtd"?> -->
+<!DOCTYPE Racine SYSTEM "ex3.dtd"
+[
+<!ENTITY e2 "<Enfant>entité</Enfant>">
+]>
+<Racine>
+    &e2;
+    Avec une entité de caractère: &#201;
+</Racine>
