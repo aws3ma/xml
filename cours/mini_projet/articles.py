@@ -27,7 +27,7 @@ class Ui_Articles(object):
             self.load_data("",self.date.text())
     def setupUi(self, Articles):
         Articles.setObjectName("Articles")
-        Articles.resize(400, 300)
+        Articles.resize(420, 300)
         self.centralwidget = QtWidgets.QWidget(Articles)
         self.centralwidget.setObjectName("centralwidget")
         Articles.setCentralWidget(self.centralwidget)
@@ -51,7 +51,7 @@ class Ui_Articles(object):
         self.menubar.addAction(self.menufile.menuAction())
 
         self.listWidget = QtWidgets.QListWidget(self.centralwidget)
-        self.listWidget.setGeometry(QtCore.QRect(10, 50, 390, 200))
+        self.listWidget.setGeometry(QtCore.QRect(10, 50, 400, 200))
         self.listWidget.setObjectName("listWidget")
         self.label = QtWidgets.QLabel(self.centralwidget)
         self.label.setGeometry(QtCore.QRect(10, 20, 47, 13))
