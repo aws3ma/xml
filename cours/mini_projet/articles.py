@@ -96,12 +96,12 @@ class Ui_Articles(object):
             # if self.auteur.text != "":
             articles = xml.parse("articles.xml").getroot()
             if date != "" and auteur =="":
-                articles= articles.findall(f".//article[date='{date}']")
+                articles= articles.findall(f"./article[date='{date}']")
             if date == "" and auteur !="":
-                articles= articles.findall(".//article[author='"+str(auteur)+"']")
+                articles= articles.findall("./article[author='"+str(auteur)+"']")
                 print(articles)
             if date != "" and auteur !="":
-                articles= articles.findall(f".//article[date='{auteur}']" and f".//article[author='{auteur}']")
+                articles= articles.findall(f"./article[date='{auteur}']" and f"./article[author='{auteur}']")
 
             i=-1
             for article in articles:

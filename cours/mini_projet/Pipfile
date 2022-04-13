@@ -7,6 +7,7 @@ name = "pypi"
 pyqt5 = "*"
 pyqt5designer = "*"
 lxml = "*"
+pyinstaller = "*"
 
 [dev-packages]
 
