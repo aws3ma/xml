@@ -1,0 +1,6 @@
+dist
+build
+conf.p
+*.spec
+*.ui
+__pycache__
