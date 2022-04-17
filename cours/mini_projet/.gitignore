@@ -1,6 +1,7 @@
 dist
 build
-conf.p
 *.spec
 *.ui
 __pycache__
+*.rar
+*.pdf
