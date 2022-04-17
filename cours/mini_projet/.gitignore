@@ -1,7 +1,7 @@
 dist
 build
+*.pyc
 *.spec
 *.ui
-__pycache__
 *.rar
 *.pdf

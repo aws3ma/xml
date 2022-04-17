@@ -21,27 +21,17 @@ public class CreateXMLFileJava {
          DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
          DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
          Document document = dBuilder.parse(inputFile);
-         for (int i = 0; i < argv.length; i++) {
-            
-            Node employee = document.getElementsByTagName("employee").item(i);
-            NodeList list = employee.getChildNodes();
-            for (int temp = 0; temp < 4; temp++) {
-               Node node = list.item(temp);
-               if (node.getNodeName().equals("salaire"))
-                  node.setTextContent("3000");
-            }
-         }
+         NodeList company = document.getElementsByTagName("employee");
 
-         // Save changes into XML file.
+         for (int i = 0; i < company.getLength(); i++) {
+            Node employe = company.item(i);
+            employe.getChildNodes().item(7).setTextContent("3000");;
+         }
          TransformerFactory transformerFactory = TransformerFactory.newInstance();
          Transformer transformer = transformerFactory.newTransformer();
          DOMSource source = new DOMSource(document);
          StreamResult result = new StreamResult(new File(xmlFilePath));
          transformer.transform(source, result);
-
-         // For console Output.
-         StreamResult consoleResult = new StreamResult(System.out);
-         transformer.transform(source, consoleResult);
       } catch (Exception e) {
          e.printStackTrace();
       }
