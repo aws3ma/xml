@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<films xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:noNamespaceSchemaLocation="doc.xsd" >
+    <acteur id="ID1"></acteur>
+    <film lang="fr">
+        <photo href="" />
+        <titre>bird box</titre>
+        <annee>1990</annee>
+        <realisateur>ahmed</realisateur>
+        <casting>cast1</casting>
+    </film>
+</films>

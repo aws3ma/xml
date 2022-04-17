@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="doc.xsd"?>
+<films>
+    <acteur id="IDREF"></acteur>
+    <film lang="fr">
+        <titre>bird box</titre>
+        <annee>1990</annee>
+        <realisateur>ahmed</realisateur>
+        <casting>
+            <personnage acteur="IDREF">acteur1</personnage>
+            <personnage>personnage1</personnage>
+        </casting>
+    </film>
+</films>

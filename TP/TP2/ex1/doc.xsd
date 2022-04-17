@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:element name="films">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="acteur" />
+				<xs:element minOccurs="1" maxOccurs="unbounded" ref="film" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="acteur">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="id" type="xs:ID" use="required" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="film">
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="1" ref="photo" />
+				<xs:element ref="titre" />
+				<xs:element ref="annee" />
+				<xs:element ref="realisateur" />
+				<xs:element ref="casting" />
+			</xs:sequence>
+			<xs:attribute name="lang" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:NMTOKEN">
+						<xs:enumeration value="fr" />
+						<xs:enumeration value="en" />
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="photo">
+		<xs:complexType>
+			<xs:attribute name="href" type="xs:string" use="required" />
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="casting">
+		<xs:complexType mixed="true">
+			<xs:sequence>
+				<xs:element minOccurs="0" maxOccurs="unbounded" ref="personnage" />
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+	<xs:element name="personnage">
+		<xs:complexType>
+			<xs:simpleContent>
+				<xs:extension base="xs:string">
+					<xs:attribute name="acteur" type="xs:IDREF" />
+				</xs:extension>
+			</xs:simpleContent>
+		</xs:complexType>
+	</xs:element> 
+	<xs:element name="titre" type="xs:string" />
+	<xs:element name="annee" type="xs:string" />
+	<xs:element name="realisateur" type="xs:string" />
+</xs:schema>

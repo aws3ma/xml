@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="style.css" type="text/css"?>
+<LinearLayout>
+    <TextView id="t1">MyApp</TextView>
+    <TextView id="t2">Enter the user information</TextView>
+    <RelativeLayout>
+        <EditText>Enter first name</EditText>
+        <EditText>Enter last name</EditText>
+        <Button>Submit</Button>
+    </RelativeLayout>
+</LinearLayout>

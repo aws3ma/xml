@@ -1,0 +1,44 @@
+*{
+    font-family: Comic Sans MS;
+}
+LinearLayout{
+    background-image: url("https://lh4.googleusercontent.com/wluc3Y6j_x5jEa-QjlkmCv4KO2qCKXp66Idg0Mu_9iPRJOI2Nq70kkROfZbfwIDU98ySZfetZkQIp0c=w1325-h668");
+    background-repeat: no-repeat;
+}
+#t1{
+    display: flex;
+    margin-left: 11px;
+    padding: 2px;
+    margin-top: 82px;
+    width: 285px;
+    height: 40px;
+    color: black;
+    font-weight: bold;
+    font-size:large;
+    background-color: rgba(0, 138, 0, 0.541);
+}
+#t2{
+    display: flex;
+    margin-left: 13px;
+    margin-top: 10px;
+    width: 290px;
+    height: 40px;
+    color: black;
+    font-weight: bold;
+}
+EditText{
+    display: flex;
+    margin-left: 35px;
+    margin-top: 10px;
+    color: lightgray;
+    font-weight: bold;
+
+}
+Button{
+    display: inline-flex;
+    text-align: center;
+    margin-left: 230px;
+
+    padding: 5px;
+    background-color: rgba(0, 138, 0, 0.541);
+}
