@@ -177,13 +177,9 @@ class Ui_MainWindow(object):
         if(exists("articles.xml") == False):
             articles = xml.Element("articles")
         article = xml.SubElement(articles,"article")
-        # authors = xml.SubElement(article,"authors")
         authors_list = self._add_auteurs.text()
         author = xml.SubElement(article,"author")
         author.text=authors_list
-        # for a in authors_list:
-        #     author = xml.SubElement(article,"author")
-        #     author.text=a
         date = xml.SubElement(article,"date")
         date.text = self._add_date.text()
         titre = xml.SubElement(article,"titre")
@@ -206,18 +202,15 @@ class Ui_MainWindow(object):
     def load_data(self,auteur,date,title):
         self.articles.clear()
         if(exists("articles.xml") == True):
-            # if self.auteur.text != "":
-            articles = xml.parse("articles.xml").getroot()
             articles2= etree.parse("articles.xml")
-            data = articles2.xpath(f"./article[contains(author/text(),'{auteur}')and starts-with(titre,'{title}')and starts-with(date,'{date}')]")
-            i=-1
+            data = articles2.xpath(f"./article[contains(author/text(),'{auteur}')and contains(titre/text(),'{title}')and starts-with(date,'{date}')]")
+            i=0
             for article in data:
-                print(article.find("author").text)
                 item = QtWidgets.QListWidgetItem()
                 self.articles.addItem(item)
                 ch=""
-                i+=1
                 item = self.articles.item(i)
+                i+=1
                 ch="Titre : "
                 
                 ch+=article.find("titre").text+" "
@@ -232,8 +225,8 @@ class Ui_MainWindow(object):
                 
                 ch+=article.find("nbpage").text
                 # print(ch)
-                item.setText(self._translate("Articles",ch))
-            self.total.display(str(i+1))
+                item.setText(self._translate("MainWindow",ch))
+            self.total.display(str(i))
 if __name__ == "__main__":
     import sys
     app = QtWidgets.QApplication(sys.argv)

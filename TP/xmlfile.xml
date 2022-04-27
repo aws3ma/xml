@@ -3,24 +3,19 @@
         <firstname>Amin</firstname>
         <lastname>Trigui</lastname>
         <age>30</age>
-        <salaire>2500.0</salaire>
+        <salaire>3000</salaire>
     </employee>
-    <employee id="2">
-        <firstname>Salah</firstname>
-        <lastname>Chaari</lastname>
-        <age>22</age>
-        <salaire>1500.0</salaire>
-    </employee>
+    
     <employee id="3">
         <firstname>Amir</firstname>
         <lastname>Ben Fraj</lastname>
         <age>24</age>
-        <salaire>2000.0</salaire>
+        <salaire>3000</salaire>
     </employee>
     <employee id="4">
         <firstname>Ahmed</firstname>
         <lastname>Frikha</lastname>
         <age>24</age>
-        <salaire>2250.0</salaire>
+        <salaire>3000</salaire>
     </employee>
 </company>
